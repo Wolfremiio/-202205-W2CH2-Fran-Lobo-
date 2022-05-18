@@ -86,10 +86,10 @@ describe('Given pop function', () => {
         test("should show array's length -> 2 ", () => {
             // ARRANGE
 
-            let array = ['pepe', 2, 12];
+            const array = ['pepe', 2, 12];
             const expectedResult = 2;
             // ACT
-            const ejecutar = pop(array);
+
             const result = array.length;
 
             // ASSERT
@@ -114,7 +114,7 @@ describe('Given shift function', () => {
         test("should show array's length -> 4", () => {
             // ARRANGE
 
-            let array = ['pepe', 2, 12];
+            const array = ['pepe', 2, 12];
             const expectedResult = 4;
             // ACT
             const result = shift(array, 'nuevo elemento');

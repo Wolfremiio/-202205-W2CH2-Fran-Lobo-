@@ -102,21 +102,6 @@ export function find(array, funcion) {
     }
 }
 
-export function find(array, funcion) {
-    /* if (typeof array === 'function') {
-        console.log('Es una funcion');
-        throw new Error('This parameters are function');
-    }
-    if (!Array.isArray(array)) {
-        throw new Error('The given parameter is not an array');  De aquí sacar funcion a parte para testear todas mis funciones.
-    } */
-
-    for (let i = 0; i < array.length; i++) {
-        if (funcion(array[i]) === true) {
-            return array[i];
-        }
-    }
-}
 // unshift([1, 2, 3, 4]);
 // unshift(shift());
 // unshift(length);
