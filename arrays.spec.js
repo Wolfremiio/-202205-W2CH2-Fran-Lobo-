@@ -87,7 +87,7 @@ describe('Given pop function', () => {
             // ARRANGE
 
             const array = ['pepe', 2, 12];
-            const expectedResult = 2;
+            const expectedResult = 3;
             // ACT
 
             const result = array.length;
