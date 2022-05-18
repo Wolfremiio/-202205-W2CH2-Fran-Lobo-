@@ -87,8 +87,12 @@ describe('Given pop function', () => {
             // ARRANGE
 
             const array = ['pepe', 2, 12];
+    
             const expectedResult = 3;
             // ACT
+
+
+           
 
             const result = array.length;
 
@@ -104,7 +108,9 @@ describe('Given pop function', () => {
             // ACT
 
             // ASSERT
-            expect(() => push(noIsArray)).toThrow(Error);
+            expect(() => push(noIsArray)).toThrow(
+                'The given parameter is not an array'
+            );
         });
     });
 });
