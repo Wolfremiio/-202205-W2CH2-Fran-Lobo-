@@ -127,7 +127,7 @@ describe('Given shift function', () => {
             expect(result).toBe(expectedResult);
         });
     });
-    describe('When no array is given', () => {
+    describe('When no array is accept', () => {
         test('it should return error ', () => {
             // ARRANGE
 
