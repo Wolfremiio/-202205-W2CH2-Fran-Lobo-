@@ -23,17 +23,15 @@ export function shift(array, elem) {
     if (!Array.isArray(array)) {
         throw new Error('The given parameter is not an array');
     }
-    // const newElem = [elem];
+
     const newArray = [elem];
     for (let i = 1; i <= array.length; i++) {
         newArray[i] = array[i - 1];
     }
     array = newArray;
-    // console.log(array.length)
+
     return array.length;
 }
-
-// shift([1,2,3], "er");
 
 export function unshift(array) {
     if (typeof array === 'function') {
@@ -43,7 +41,7 @@ export function unshift(array) {
     if (!Array.isArray(array)) {
         throw new Error('The given parameter is not an array');
     }
-    // const newElem = [elem];
+
     const newArray = [];
     for (let i = 1; i < array.length; i++) {
         newArray[i - 1] = array[i];
@@ -101,8 +99,3 @@ export function find(array, funcion) {
         }
     }
 }
-
-// unshift([1, 2, 3, 4]);
-// unshift(shift());
-// unshift(length);
-// console.log(typeof length);
