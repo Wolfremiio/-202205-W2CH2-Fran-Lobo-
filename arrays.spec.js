@@ -87,12 +87,9 @@ describe('Given pop function', () => {
             // ARRANGE
 
             const array = ['pepe', 2, 12];
-    
+
             const expectedResult = 3;
             // ACT
-
-
-           
 
             const result = array.length;
 
@@ -124,7 +121,6 @@ describe('Given shift function', () => {
             const expectedResult = 4;
             // ACT
             const result = shift(array, 'nuevo elemento');
-            // const result = array.length;
 
             // ASSERT
 
@@ -168,7 +164,7 @@ describe('Given unshift function', () => {
             expect(() => push(noIsArray)).toThrow(Error);
         });
     });
-    describe('When function is given', () => {
+    describe('When function is given', function () {
         test('it should return true ', () => {
             // ARRANGE
             const array = [3, 2, 3, 4];
@@ -178,7 +174,6 @@ describe('Given unshift function', () => {
 
             const result = some(array, mayor);
             // ACT
-
             // ASSERT
             expect(result).toBe(false);
         });
